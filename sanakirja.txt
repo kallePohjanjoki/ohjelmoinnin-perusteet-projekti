@@ -1,0 +1,145 @@
+Aamu: Päivän ensimmäinen ajanjakso auringonnousun aikaan.
+
+Aurinko: Tähti, joka valaisee ja lämmittää Maata.
+
+Auto: Moottoriajoneuvo, jolla liikutaan teillä.
+
+Banaani: Keltaiseksi kypsyvä, makea hedelmä.
+
+Elokuva: Liikkuvasta kuvasta koostuva viihdemuoto.
+
+Esimerkki: Malli tai tapaus, joka havainnollistaa jotain asiaa.
+
+Hedelmä: Kasvin syötävä osa, joka sisältää siemenia.
+
+Huone: Rakennuksen sisätila, jossa voidaan oleskella.
+
+Ilma: Kaasuseos, jota hengitämme.
+
+Järvi: Suuri, pysyvä makean veden vesialue.
+
+Juoma: Neste, jota nautitaan janoon tai makuelämyksen vuoksi.
+
+Jää: Kiinteässä olomuodossa oleva vesi.
+
+Kahvi: Juoma, joka valmistetaan paahdetuista kahvipavuista.
+
+Kalenteri: Aikataulua tai päiviä esittävä järjestelmä.
+
+Kamera: Laite, jolla otetaan valokuvia tai videoita.
+
+Kaupunki: Suuri asutuskeskus, jossa on tiivis infrastruktuuri.
+
+Kirja: Sidottu teos, joka sisältää tekstiä tai kuvia.
+
+Kissa: Pieni, petoeläimiin kuuluva kotieläin.
+
+Koira: Ihmisen yleisesti lemmikkinä pitämä kotieläin.
+
+Koulu: Oppilaitos, jossa opetetaan eri aineita.
+
+Kukka: Kasvin lisääntymiseen liittyvä osa, usein värikäs.
+
+Kuu: Maan luonnollinen satelliitti.
+
+Kynä: Kirjoitusväline, jolla tehdään merkintöjä.
+
+Lapsi: Ihmisen jälkeläinen ennen aikuisuutta.
+
+Leipä: Viljasta valmistettu peruselintarvike.
+
+Lumi: Kiinteässä olomuodossa oleva sade, jääkiteiden muodostama.
+
+Luonto: Ympäröivä maailma, johon kuuluvat kasvit, eläimet ja maisemat.
+
+Maapallo: Planeetta, jolla elämme.
+
+Maito: Valkoinen neste, jota saadaan nisäkkäistä ja käytetään juomana tai ruoassa.
+
+Meri: Suuri suolaisen veden vesialue.
+
+Metsä: Laaja alue, jolla kasvaa puita.
+
+Muna: Eläinten lisääntymiseen liittyvä, kuorellinen solurakenne.
+
+Naapuri: Henkilö, joka asuu lähellä toista henkilöä.
+
+Nauru: Äänellinen reaktio, joka ilmaisee iloa tai huvittuneisuutta.
+
+Nenä: Kasvon osa, jota käytetään hengittämiseen ja hajujen aistimiseen.
+
+Norsu: Suuri, pitkäkärsäinen nisäkäs.
+
+Olut: Käymisteitse valmistettu alkoholijuoma.
+
+Onni: Hyvän olon ja tyytyväisyyden tila.
+
+Opettaja: Henkilö, joka opettaa muita ihmisiä.
+
+Orava: Pieni, puissa elävä jyrsijä.
+
+Pallo: Pyöreä esine, jota käytetään peleissä ja leikeissä.
+
+Pankki: Laitos, joka säilyttää ja lainaa rahaa.
+
+Peili: Heijastava pinta, josta voi nähdä oman kuvansa.
+
+Penkki: Istuin, johon mahtuu useampi henkilö.
+
+Peruna: Maan alla kasvava mukulakasvi, joka on yleinen ravinnonlähde.
+
+Pilvi: Taivaalla oleva vesihöyryn muodostama näkyvä rakenne.
+
+Poliisi: Viranomainen, joka valvoo lakia ja järjestystä.
+
+Puhelin: Laite, jolla voi soittaa ja viestiä.
+
+Puisto: Vihreä alue kaupungissa, yleensä vapaa-ajanviettoon tarkoitettu.
+
+Puu: Suurikokoinen kasvi, jolla on puumainen runko.
+
+Raha: Vaihdon väline, jolla ostetaan tuotteita ja palveluita.
+
+Rakennus: Ihmisen rakentama pysyvä rakenne, kuten talo.
+
+Ranta: Alue, joka rajautuu veteen, kuten järven tai meren äärellä.
+
+Ruoka: Aine, jota syödään ravinnoksi.
+
+Saari: Maanosa, jota ympäröi vesi.
+
+Sade: Ilmakehästä putoava vesi, joka voi olla nestemäistä tai kiinteää.
+
+Sanakirja: Teos, joka sisältää sanoja ja niiden määritelmiä.
+
+Silmät: Näköaistiin liittyvät elimet.
+
+Sopimus: Virallinen tai epävirallinen yhteisymmärrys kahden tai useamman osapuolen välillä.
+
+Sormus: Sormessa pidettävä koriste-esine.
+
+Susi: Villinä elävä koiraeläin.
+
+Taivas: Ilmakehän yläosa, jota katsotaan maan pinnalta.
+
+Talo: Rakennus, jossa asutaan.
+
+Tanssi: Kehon liikuttaminen rytmikkäästi musiikin tahdissa.
+
+Tee: Juoma, joka valmistetaan teelehdistä.
+
+Televisio: Laite, joka vastaanottaa ja näyttää kuvia ja ääntä.
+
+Tie: Rakennettu kulkuväylä, jota pitkin liikutaan.
+
+Tunti: Ajan yksikkö, joka kestää 60 minuuttia.
+
+Uni: Mielen ja kehon lepoaika.
+
+Uutiset: Ajankohtaisista tapahtumista kertova tiedonvälitys.
+
+Vaatteet: Ihmisen päälleen pukema kangasmateriaali.
+
+Vesi: Väritön ja hajuton neste, joka on elämän perusedellytys.
+
+Vuori: Maaston korkeampi osa, joka kohoaa ympäristöstään
