@@ -7,7 +7,10 @@ with open("sanakirja.txt", "r", encoding="utf-8") as file:
             dict[key.strip()] = definition.strip()
 
 def search(word):
-    pass
+    if word in dict:
+        print(f"{word}: {dict[word]}")
+    else:
+        print("Sanaa ei löytynyt sanakirjasta.")
 
 
 def add(word, definition):
@@ -39,4 +42,12 @@ def update(word, definition):
 
 
 def delete(word):
-    pass
+    if word not in dict:
+        print("Sanaa ei löytynyt sanakirjasta.")
+        return
+    else:
+        del dict[word]
+        with open("sanakirja.txt", "w", encoding="utf-8") as file:
+            for key, value in dict.items():
+                file.write(f"{key}: {value}\n\n")
+        print(f"Sana '{word}' poistettiin sanakirjasta.")
