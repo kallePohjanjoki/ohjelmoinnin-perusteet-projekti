@@ -6,12 +6,16 @@ with open("sanakirja.txt", "r", encoding="utf-8") as file:
             key, definition = i.strip().split(":", 1)
             dict[key.strip()] = definition.strip()
 
+# Käyttäjä voi hakea haluaamansa sanaa sanakirjasta
+
 def search(word):
     if word in dict:
         print(f"{word}: {dict[word]}")
     else:
         print("Sanaa ei löytynyt sanakirjasta.")
 
+
+# Käyttäjä voi lisätä haluamansa sanan sanakirjaan
 
 def add(word, definition):
     if word in dict:
@@ -22,6 +26,8 @@ def add(word, definition):
         with open("sanakirja.txt", "a", encoding="utf-8") as file:
             file.write(f"{word}: {definition}\n\n")
 
+
+# Käyttäjä voi päivittää haluamallensa sanalle uuden merkityksen
 
 def update(word, definition):
     if word not in dict:
@@ -40,6 +46,7 @@ def update(word, definition):
         for key, value in dict.items():
             file.write(f"{key}: {value}\n\n")
 
+# Käyttäjä voi poistaa haluamansa sanan sanakirjasta.
 
 def delete(word):
     if word not in dict:
