@@ -51,3 +51,33 @@ def delete(word):
             for key, value in dict.items():
                 file.write(f"{key}: {value}\n\n")
         print(f"Sana '{word}' poistettiin sanakirjasta.")
+
+
+while True:
+    print("Valitse toiminto:")
+    print("1. Etsi sana")
+    print("2. Lisää sana")
+    print("3. Päivitä sana")
+    print("4. Poista sana")
+    print("5. Lopeta")
+
+    choice = input("Valintasi: ")
+
+    if choice == "1":
+        word = input("Anna sana: ")
+        search(word)
+    elif choice == "2":
+        word = input("Anna sana: ")
+        definition = input("Anna sanaan liittyvä määritelmä: ")
+        add(word, definition)
+    elif choice == "3":
+        word = input("Anna sana: ")
+        definition = input("Anna uusi määritelmä: ")
+        update(word, definition)
+    elif choice == "4":
+        word = input("Anna sana: ")
+        delete(word)
+    elif choice == "5":
+        break
+    else:
+        print("Virheellinen valinta.")
