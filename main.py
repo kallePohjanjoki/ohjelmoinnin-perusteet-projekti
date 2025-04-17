@@ -1,5 +1,6 @@
 dict = {}
 
+# Avaa sanakirja.txt tiedoston lukemista varten, jos mahdollista
 try:
     with open("sanakirja.txt", "r", encoding="utf-8") as file:
         for i in file:
@@ -113,6 +114,7 @@ while True:
         word = input("Anna sana: ")
         delete(word)
     elif choice == "5":
+        print("Moikka!")
         break
     else:
         print("Virheellinen valinta.")
