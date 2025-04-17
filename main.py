@@ -1,19 +1,29 @@
 dict = {}
 
-with open("sanakirja.txt", "r", encoding="utf-8") as file:
-       for i in file:
-        if ":" in i:
-            key, definition = i.strip().split(":", 1)
-            dict[key.strip()] = definition.strip()
+try:
+    with open("sanakirja.txt", "r", encoding="utf-8") as file:
+        for i in file:
+            if ":" in i:
+                try:
+                    key, definition = i.strip().split(":", 1)
+                    dict[key.strip()] = definition.strip()
+                except ValueError:
+                    continue
+except FileNotFoundError:
+    open("sanakirja.txt", "w", encoding="utf-8").close()
+except Exception as e:
+    print(f"Tiedoston lukemisessa tapahtui virhe: {e}")
 
 # Käyttäjä voi hakea haluaamansa sanaa sanakirjasta
 
 def search(word):
-    if word in dict:
-        print(f"{word}: {dict[word]}")
-    else:
-        print("Sanaa ei löytynyt sanakirjasta.")
-
+    try:
+        if word in dict:
+            print(f"{word}: {dict[word]}")
+        else:
+            print("Sanaa ei löytynyt sanakirjasta.")
+    except Exception as e:
+        print(f"Virhe haettaessa sanaa: {e}")
 
 # Käyttäjä voi lisätä haluamansa sanan sanakirjaan
 
@@ -23,9 +33,11 @@ def add(word, definition):
         return
     else:
         dict[word] = definition
-        with open("sanakirja.txt", "a", encoding="utf-8") as file:
-            file.write(f"{word}: {definition}\n\n")
-
+        try:
+            with open("sanakirja.txt", "a", encoding="utf-8") as file:
+                file.write(f"{word}: {definition}\n\n")
+        except Exception as e:
+            print(f"Virhe tiedostoon kirjoittaessa: {e}")
 
 # Käyttäjä voi päivittää haluamallensa sanalle uuden merkityksen
 
@@ -35,16 +47,26 @@ def update(word, definition):
         return
 
     else:
-        with open("sanakirja.txt", "r", encoding="utf-8") as file:
-            for i in file:
-                if ":" in i.strip():
-                    key, value = i.strip().split(":", 1)
-                    dict[key.strip()] = value.strip()
+        try:
+            with open("sanakirja.txt", "r", encoding="utf-8") as file:
+                for i in file:
+                    if ":" in i.strip():
+                        try:
+                            key, value = i.strip().split(":", 1)
+                            dict[key.strip()] = value.strip()
+                        except ValueError:
+                            continue
+        except Exception as e:
+            print(f"Virhe sanakirjan latauksessa: {e}")
+            return
 
     dict[word] = definition
-    with open("sanakirja.txt", "w", encoding="utf-8") as file:
-        for key, value in dict.items():
-            file.write(f"{key}: {value}\n\n")
+    try:
+        with open("sanakirja.txt", "w", encoding="utf-8") as file:
+            for key, value in dict.items():
+                file.write(f"{key}: {value}\n\n")
+    except Exception as e:
+        print(f"Virhe sanakirjan tallennuksessa: {e}")
 
 # Käyttäjä voi poistaa haluamansa sanan sanakirjasta.
 
@@ -54,11 +76,13 @@ def delete(word):
         return
     else:
         del dict[word]
-        with open("sanakirja.txt", "w", encoding="utf-8") as file:
-            for key, value in dict.items():
-                file.write(f"{key}: {value}\n\n")
-        print(f"Sana '{word}' poistettiin sanakirjasta.")
-
+        try:
+            with open("sanakirja.txt", "w", encoding="utf-8") as file:
+                for key, value in dict.items():
+                    file.write(f"{key}: {value}\n\n")
+            print(f"Sana '{word}' poistettiin sanakirjasta.")
+        except Exception as e:
+            print(f"Virhe sanan poistamisessa: {e}")
 
 while True:
     print("Valitse toiminto:")
@@ -68,7 +92,11 @@ while True:
     print("4. Poista sana")
     print("5. Lopeta")
 
-    choice = input("Valintasi: ")
+    try:
+        choice = input("Valintasi: ")
+    except Exception as e:
+        print(f"Syötteen lukemisessa tapahtui virhe: {e}")
+        continue
 
     if choice == "1":
         word = input("Anna sana: ")
